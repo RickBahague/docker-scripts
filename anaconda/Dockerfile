@@ -2,7 +2,7 @@
 # Email: rtbue@pm.me
 # DS docker template
 # build via: docker build -t rtb_datascience .
-# Run: docker run -d -v /local_dir:/data -p 8888:8888 -m MEMORY --name project_name rtb_datascience
+# Run: docker run -d -v /local_dir:/data -p 8888:8888 --shm-size 2g -m MEMORY --name project_name rtb_datascience
 # UPDATE resources: docker update -m MEMORY 
 
 FROM ubuntu:18.04
