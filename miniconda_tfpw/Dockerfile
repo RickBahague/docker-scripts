@@ -3,6 +3,7 @@
 # DS docker template
 # build via: docker build -t rtb_miniconda .
 # Run: docker run -d -v /local_dir:/data -p 8888:8888 --shm-size 2g -m MEMORY --name project_name rtb_datascience
+# need to add --shm-size to run selenium, from https://github.com/SeleniumHQ/docker-selenium/issues/388
 # UPDATE resources: docker update -m MEMORY 
 
 FROM rtb_miniconda:latest
